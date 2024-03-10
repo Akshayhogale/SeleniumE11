@@ -27,9 +27,9 @@ public class CreateUserManager extends BaseTest {
 		int no = wl.randomNo();
 		
 		String usn = flib.readExcelData(EXCEL_PATH, "managercreds", 1, 0);
-		String pwd = flib.readExcelData(EXCEL_PATH, "managercreds", 1, 1);
-		String fname = flib.readExcelData(EXCEL_PATH, "managercreds", 1, 2);
-		String lname = flib.readExcelData(EXCEL_PATH, "managercreds", 1, 3);
+		String pwd = flib.readExcelData(EXCEL_PATH, "managercreds", 1, 0);
+		String fname = flib.readExcelData(EXCEL_PATH, "managercreds", 1, 0);
+		String lname = flib.readExcelData(EXCEL_PATH, "managercreds", 1,0);
 		
 		up.createNewUserMethod(usn+no, pwd+no, fname+no, lname+no);
 	}

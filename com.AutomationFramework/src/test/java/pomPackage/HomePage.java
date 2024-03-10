@@ -9,7 +9,7 @@ public class HomePage {
 
 	// Declaration
 		@FindBy(xpath="//div[text()='Time-Track']/ancestor :: a/ descendant :: img") private WebElement timeTrackModule;
-		@FindBy(xpath="//div[text()='Tasks']/ following-sibling :: img") private WebElement tasksModule;
+		@FindBy(xpath="//div[text()='Subtasks']/ following-sibling :: img") private WebElement subtasksModule;
 		@FindBy(xpath="//div[text()='Reports']/ following-sibling :: img") private WebElement reportsModule;
 		@FindBy(xpath="//div[text()='Users']/ following-sibling :: img") private WebElement usersModule;
 		@FindBy(xpath="//div[text()='Work Schedule']/ following-sibling :: img") private WebElement workScheduleModule;
@@ -30,11 +30,9 @@ public class HomePage {
 			return timeTrackModule;
 		}
 
-
-		public WebElement getTasksModule() {
-			return tasksModule;
+		public WebElement getSubtasksModule() {
+			return subtasksModule;
 		}
-
 
 		public WebElement getReportsModule() {
 			return reportsModule;
